@@ -1,11 +1,10 @@
-let btn=document.getElementById('button')
-let counter=documnet.getElementById('counter')
+let counter = document.getElementById("counter");
+let button = document.getElementById("incrementBtn");
 
-let value
+let value = 0;
 
-counter.textContent=value
-
-btn.addEventListener("onClick",()=>{
-	value+=0
-	counter.textContent=value
-})
+button.addEventListener("click", () => {
+  alert("Current value: " + value); // un-incremented value
+  value++;
+  counter.textContent = value;
+});
